@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="163" height="50" viewBox="0 0 163 50">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-size: 24px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #737373;
+      }
+
+      .cls-2, .cls-5 {
+        font-family: "Novecentowide-DemiBold";
+        font-weight: bold;
+      }
+
+      .cls-4, .cls-5 {
+        font-size: 36px;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g>
+    <text x="62" y="34" class="cls-1"><tspan class="cls-2">Display</tspan></text>
+    <rect width="50" height="50" class="cls-3"/>
+    <text x="11" y="38" class="cls-4"><tspan class="cls-5">D</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bild test</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/contact.css"/>
+    <script src="js/map.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/form.js" defer></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_orhZd-0X_pjhFdmpjsgmajVHg2BT6rk&callback=initMap">
+  </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> 
+</head>
+<body>
+        <script>
+               
+                </script>
+    <header>
+
+        
+        <div id="col2">
+            <img src="images/logo.svg"/>
+        
+
+        <div id="social">
+            <a href=""><img src="images/facebook.svg"></a>
+            <a href=""><img src="images/twitter.svg"></a>
+            <a href=""><img src="images/dribbble.svg"></a>
+            <a href=""><img src="images/rss.svg"></a>
+            <a href=""><img src="images/pinterest.svg"></a>
+            <a href=""><img src="images/google +.svg"></a>
+        </div>
+    </div>
+        <div>
+            <hr>
+        </div>   
+
+        <div id="menu">
+            <img id="menusel" src="images/menu.svg"/>
+
+            <nav>
+                <ul>
+                    <li><a  href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a class="currentpage"  href="contact.html">Contact</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+        
+    </header>
+
+    <section>
+
+        <h1>GOT QUESTION OR INQUIRY</h1>
+
+    </section>
+        <main>
+   
+            <div id="map"></div>
+
+
+            
+        </main>
+<div id="contact_info_sec" >
+        <section id="section_info">
+                
+                    <h1>Contact form</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel</p>
+               
+                    <form (ngSubmit)="processForm()">
+
+                            <!-- name -->
+                            <div class="field">
+                              <input 
+                                type="text" 
+                                name="name" 
+                                class="input" 
+                                placeholder="Name" 
+                                [(ngModel)]="name"
+                                required
+                                minlength="3"
+                                #nameInput="ngModel">
+                          
+                              <div class="help is-error" *ngIf="nameInput.invalid && nameInput.dirty">
+                                Name is required and needs to be at least 3 characters long.
+                              </div>
+                            </div>
+                          
+                            <!-- email -->
+                            <div class="field">          
+                              <input 
+                                type="email" 
+                                name="email" 
+                                class="input" 
+                                placeholder="Email Address" 
+                                [(ngModel)]="email"
+                                required
+                                email
+                                #emailInput="ngModel">
+                          
+                              <div class="help is-error" *ngIf="emailInput.invalid && emailInput.dirty">
+                                Needs to be a valid email.
+                              </div>
+                            </div>
+
+                            <!-- subject -->
+                            <div class="field">
+                                    <input 
+                                      type="text" 
+                                      name="subject" 
+                                      class="input" 
+                                      placeholder="Subject" 
+                                      [(ngModel)]="subject"                                    
+                                      minlength="10"
+                                      #nameInput="ngModel">
+                                
+                                    <div class="help is-error" *ngIf="nameInput.invalid && nameInput.dirty">
+                                      Subject is required and needs to be at least 10 characters long.
+                                    </div>
+                                  </div>
+                          
+                            <!-- message -->
+                            <div class="field">
+                              <textarea 
+                                class="textarea" 
+                                name="message" 
+                                placeholder="" 
+                                [(ngModel)]="message"
+                                required
+                                minlength="50"
+                                maxlength="1000"
+                                #messageInput="ngModel"></textarea>
+                          
+                                <div class="help is-error" *ngIf="emailInput.invalid && emailInput.dirty">
+                                  Your message is required!
+                                </div>
+                            </div>
+                          
+                            <button id="btn_submit" type="submit" class="button is-danger is-large">Send message</button>
+                          
+                          </form>
+              
+                        </section>
+                <section id="section_info">
+                <div id="info">
+
+                    <h1>Contact info</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+
+                    <p><b>email:</b><a href="">info@display.com</a></p>
+                    <p><b>phone:</b>1.306.222.4545</p>
+                    <p>222 2nd Ave South</p>
+                    <p>Saskabush,SK S7M1T6</p>
+                </div>
+                <div id="info">
+
+                        <h1>STORE HOURS</h1>
+                       
+                        <div id="col2">
+                        <p>Monday-Thursday</p> <p>8am - 5pm</p></div>
+                        <div id="col2">
+                        <p>Friday</p> <p>8am - 6pm</p></div>
+                        <div id="col2">
+                        <p>Saturday</p> <p>9am - 5pm</p></div>
+                         <div id="col2">
+                        <p>Sunday & Holidays</p> <p>Closed</p></div>
+                    </div>
+            </section>
+            </div>
+        
+        <section class="ayrtba">
+
+                <h1>Are you ready to be blown away ?</h1>
+                <button>Click here to find out</button>
+            </section>
+ <footer>
+     <p>Copyright 2013 Display. All Rights Reserved.</p>
+     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+     <nav>
+     <ul id="footer_nav">
+         <li>
+             <a href="index.html">Home</a>
+         </li>
+        <li>/</li>
+         <li>
+            <a href="about.html">About</a>
+        </li>
+        <li>/</li>
+        <li>
+            <a href="work.html">Work</a>
+        </li>
+        <li>/</li>
+        <li>
+            <a href="contact.html">Contact</a>
+        </li>
+     </ul>
+    </nav>
+ </footer>
+
+</body>
+</html>

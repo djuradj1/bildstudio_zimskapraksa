@@ -1,0 +1,85 @@
+main{
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto auto auto ;
+    
+}
+
+main>img{
+    width: 80%;
+}
+
+main>p{
+padding: 1.4em;
+font-weight: 700;
+}
+
+.statnfact{
+    background-color: white;
+    display: grid;
+    grid-template-rows: auto auto;
+    color:#8a8888;
+}
+
+.statnfact h1{
+    margin: 0 auto;
+}
+.statnfact p{
+    margin: 0 auto;
+    font-size: 14px;
+    padding: 1.3em 0;
+}
+#tabs{
+    background-color: #efefef;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+   
+}
+
+#tabs > img{
+    width:100%;
+  
+   
+}
+
+.hovered:hover{
+    background-color: #dadada;
+}
+
+#section1{
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    main{
+        padding: 4em;
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+
+    main p {
+        padding: 1em;
+       line-height: 20px;
+    }
+
+   
+   .statnfact{
+       padding: 4em;
+       line-height: 30px;
+   }
+
+   .statnfact h1{
+       text-transform: uppercase;
+   }
+
+   #tabs{
+    background-color: #efefef;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+#tabs > img{
+    width:70%;
+    
+}
+}
